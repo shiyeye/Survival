@@ -49,6 +49,7 @@ public class BattleSystem : MonoBehaviour
         dialogText.text = enemyUnit.unitName + " Rua! ";
 
         //设置玩家和敌人的血条和文本
+        //调用BattleHud类中的SetHud方法，传入Unit对象，先公开unit各个参数数值的代码，然后再创建一个battlehud的脚本，设置各个参数的值等于unit脚本里的参数，然后再公开battlehud的参数带入进去
         playerHud.SetHud(playerUnit);
         enemyHud.SetHud(enemyUnit);
 
